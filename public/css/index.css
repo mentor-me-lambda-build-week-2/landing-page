@@ -1,5 +1,39 @@
 
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
 .row {
     width: 100 px;
     display: flex;
+}
+
+header: {
+    background: 
+
+}
+
+nav{
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left:  70px;
+    padding-top:  25px;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
 }
