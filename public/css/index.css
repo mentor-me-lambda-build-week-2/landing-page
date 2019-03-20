@@ -37,13 +37,13 @@ body a{
 }
 
 
-#menu_button{
+#menu-button{
     margin: -2px;
     color: #fff;
     width: 80px;
     padding-top: 10px;
 
-    background-color: #4abb53;
+    background-color: #4A4849;
     border-right: solid thin #fff;
     display: inline-block;
     text-align: center;
@@ -63,7 +63,7 @@ body a{
 
 
 #content{
-        background-image: url(./images/middle.jpeg);
+        background-image: url();
         min-height: 200px;
         background-size: 100% auto;
         text-align: center;
@@ -85,7 +85,7 @@ body a{
 }
 
 #info_header{
-        background-color: rgb(255,72,40);
+        background-color: rgb(156, 48, 21);
         color: #fff;
         padding: 4px;
         margin-bottom: 10px;
