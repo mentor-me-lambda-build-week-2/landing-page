@@ -55,8 +55,58 @@ body a{
 
 #footer{
         background-color: rgb(20, 20, 20);
-        color: fff;
+        color: #fff;
         padding-top: 20px;
         text-align: center;
         height: 80px;
 }
+
+
+#content{
+        background-image: url(./images/middle.jpeg);
+        min-height: 200px;
+        background-size: 100% auto;
+        text-align: center;
+        padding: 50px;
+}
+
+
+#info{
+        max-width: 170px;
+        width: 100%;
+        min-width: 130px;
+        background-color: rgba(0,0,0,0.7);
+        height: 200px;
+        display: inline-block;
+        margin: 4px;
+        vertical-align: top;
+        color: #fff;
+        padding: 4px;
+}
+
+#info_header{
+        background-color: rgb(255,72,40);
+        color: #fff;
+        padding: 4px;
+        margin-bottom: 10px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:500px){
+
+            #big_menu{
+                display: none;
+            }
+
+}
+
+
+/* @media screen and (min-width:501px){
+
+    #small_menu{
+        display: none;
+    }
+    
+    } */
