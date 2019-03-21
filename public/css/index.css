@@ -1,1 +1,273 @@
+body{
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 12px;
+        margin: unset; 
+}
 
+body a{
+        text-decoration: none;
+        color:grey;
+
+}
+
+#wrapper{
+       min-width: 350px;
+       width: 100%;
+       height: 100vh;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px; 100px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-text{
+ font-size: 50px;
+}
+
+.logo{
+    width: 90px;
+
+
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 25px;
+    background: white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+
+.header-container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+#main_title{
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 4px;
+}
+
+#small_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 4px;
+        color: grey;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+}
+
+.header{
+    height: 500px;
+    background: url("/images/building.jpeg");
+    background-size: cover;
+
+    width: 100%;
+}
+
+#big_menu{
+        background-color: rgb(52,46,90);
+        color:grey;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.info-wrapper{
+    display: flex;
+
+}
+
+
+.middle-top{
+    font-size: 20px;
+    width: 95%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-image: url(/images/network.jpeg);
+    background-size: cover;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+
+}
+
+.middle-text{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    width: 80%;
+}
+
+
+.menu-button{
+    margin-top: 20px;
+    color: grey;
+    width: 80px;
+    padding-top: 10px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+    
+    
+}
+
+.bottom-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#footer{
+        background-color: rgb(20, 20, 20);
+        color: #fff;
+        padding-top: 20px;
+        text-align: center;
+        height: 80px;
+}
+
+
+#content{
+        background-image: url();
+        min-height: 200px;
+        background-size: 100% auto;
+        text-align: center;
+        padding: 50px;
+}
+
+
+#info{
+        max-width: 170px;
+        width: 100%;
+        min-width: 130px;
+        background-color: rgba(0,0,0,0.7);
+        height: 200px;
+        display: inline-block;
+        margin: 4px;
+        vertical-align: top;
+        color: #fff;
+        padding: 4px;
+}
+
+#info_header{
+        background-color: lightskyblue;
+        color: #fff;
+        padding: 4px;
+        margin-bottom: 10px;
+}
+
+
+.middle-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.cards-container{
+
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.front, .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+
+}
+
+.front:hover{
+    transform: rotateY(180deg);
+}
+
+.back:hover{
+    transform: rotateY(180deg);
+}
+
+
+.text-background-box{
+    padding: 25px;
+    text-align: center;
+    background: rgba(0,0,0, .6);
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 40%;
+    align-items: center;
+    box-shadow: 1px 1px 1px rgba(8, 8, 8, 0.479)
+}
+.back{
+   
+    transform: rotateY(180deg);
+
+}
+
+.flipped{
+    transform: rotateY(180deg);
+
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:500px){
+
+            #big_menu{
+                display: none;
+            }
+
+}
+
+
+/* @media screen and (min-width:501px){
+
+    #small_menu{
+        display: none;
+    }
+    
+    } */
