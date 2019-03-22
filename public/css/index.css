@@ -84,7 +84,7 @@ nav{
 
 .header{
     height: 500px;
-    background: url("/images/building.jpeg");
+    background: url(https://images.unsplash.com/photo-1462396240927-52058a6a84ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80);
     background-size: cover;
 
     width: 100%;
@@ -113,7 +113,7 @@ nav{
     height: 50%;
     display: flex;
     align-items: center;
-    background-image: url(/images/network.jpeg);
+    background-image: url(https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
     background-size: cover;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -214,9 +214,10 @@ nav{
 .bottom-header{
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
-    font-size: 55px;
-    height: 15%;
+    padding: 17px;
+    margin-bottom: 8px;
+    font-size: 50px;
+    height: 16%;
     background: linear-gradient(white, rgb(40, 124, 192));
     
 
@@ -261,13 +262,13 @@ bottom: 0;
 position: absolute;
 -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
 box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
-border-radius: 100%;
+border-radius: 80%;
 z-index: -1;
 }
-#contact article {
+/* #contact article {
   padding: 1em;
-}
-#contact h1 {
+} */
+/* #contact h1 {
   
 background: linear-gradient(white, rgb(40, 124, 192));
 font-family: Oswald ,sans-serif;
@@ -277,7 +278,7 @@ color: white;
 text-shadow: 0 0.06em 0 #424242;
 position: relative;
 
-}
+} */
 .contactbutton {
 background: linear-gradient(white, rgb(40, 124, 192));
 text-align: center;
@@ -287,6 +288,7 @@ height: 50px;
 margin-top: 20px;
 margin-bottom: 2px;
 cursor: pointer;
+
 }
 .contactbutton:hover {
 
@@ -310,7 +312,7 @@ top: -2.5em;
 left: -2.95em;
 display: block;
 position: absolute;
-border-top: 1.2em solid #832032;
+border-top: 1.2em solid grey;
 border-left: 1.6em solid transparent;
 border-right: 1.6em solid transparent;
 border-bottom: 1em solid transparent;
