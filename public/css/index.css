@@ -1,6 +1,6 @@
 body{
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 12px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 11px;
         margin: unset; 
 }
 
@@ -34,7 +34,9 @@ nav{
 }
 
 .logo-text{
- font-size: 50px;
+ font-size: 23px;
+ color: rgb(40, 124, 192);
+
 }
 
 .logo{
@@ -63,7 +65,7 @@ nav{
     justify-content: flex-end;
 }
 #main_title{
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         letter-spacing: 4px;
 }
@@ -95,6 +97,7 @@ nav{
 .button-container{
     display: flex;
     justify-content: center;
+    font-size: 20px;
 
 }
 
@@ -136,6 +139,7 @@ nav{
     text-align: center;
     height: 30px;
     cursor: pointer;
+    font-size: 15px;
     
     
 }
@@ -144,11 +148,12 @@ nav{
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #footer{
-        background-color: rgb(20, 20, 20);
-        color: #fff;
+        background: linear-gradient(white, rgb(40, 124, 192));
+        color: black;
         padding-top: 20px;
         text-align: center;
         height: 80px;
@@ -168,20 +173,22 @@ nav{
         max-width: 170px;
         width: 100%;
         min-width: 130px;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(53, 49, 49, 0.7);
         height: 200px;
         display: inline-block;
-        margin: 4px;
+        margin: 75px;
         vertical-align: top;
         color: #fff;
         padding: 4px;
+        text-align: center;
 }
 
 #info_header{
-        background-color: lightskyblue;
+        background: rgb(40, 124, 192);
         color: #fff;
         padding: 4px;
         margin-bottom: 10px;
+        text-align: center;
 }
 
 
@@ -195,16 +202,40 @@ nav{
 }
 
 .cards-container{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    flex-wrap: wrap;
+    max-width: 700px;
+    
+}
+
+.bottom-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-size: 55px;
+    height: 15%;
+    background: linear-gradient(white, rgb(40, 124, 192));
+    
 
 }
+
 
 .card{
-    width: 250px;
-    height: 250px;
+    /* width: 250px;
+    height: 250px; */
+    padding: 15px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 218px;
+    margin-bottom: 15px;
 }
 
-.front, .back{
+/* .front, .back{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +255,7 @@ nav{
 
 .back:hover{
     transform: rotateY(180deg);
-}
+} */
 
 
 .text-background-box{
@@ -239,7 +270,7 @@ nav{
     align-items: center;
     box-shadow: 1px 1px 1px rgba(8, 8, 8, 0.479)
 }
-.back{
+/* .back{
    
     transform: rotateY(180deg);
 
@@ -248,8 +279,52 @@ nav{
 .flipped{
     transform: rotateY(180deg);
 
+} */
+
+.picture{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 200px;
+
 }
 
+.about-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 28px;
+
+}
+.position{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-style: italic;
+    background: black;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
 
 
 
