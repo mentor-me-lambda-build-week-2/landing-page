@@ -1,0 +1,310 @@
+.collapse-init summary + * {
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /*
+    Closed state. Any CSS transitions work here
+    The JS has a height calculation to make sliding opened/closed easier, but it's not necessary
+    Remove the height prop for a simple toggle on/off (after all that work I did for you?)
+  */
+
+
+/* NAV BAR */
+
+#wrapper{
+    min-width: 350px;
+
+    background-image: url(https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1250&q=80)
+    background-size: cover;
+    margin-top; 22ps;
+    margin-bottom: 22px;
+    display:flex;
+    justify-content: center;
+}
+
+
+nav{
+ position: fixed;
+ top: 1px;
+ left: 0;
+ width: 100%;
+ height: 80px;
+ 
+ box-sizing: border-box;
+ transition: .7s;
+}
+
+.logo-container{
+ display: flex;
+ align-items: center;
+
+}
+
+.logo-text{
+font-size: 20px;
+color: rgb(40, 124, 192);
+
+
+}
+
+.logo{
+ width: 90px;
+
+
+
+}
+
+.navbar{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ padding: 5px;
+ margin-bottom: 25px;
+ background: white;
+ box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+
+}
+
+.menu-button{
+    margin-top: 20px;
+    color: grey;
+    width: 80px;
+    padding-top: 10px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    
+    
+}
+
+
+/* 
+.header-container{
+
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content: flex-end;
+}
+#main_title{
+     font-size: 16px;
+     text-align: center;
+     letter-spacing: 4px;
+}
+
+#small_menu{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: white;
+     padding: 4px;
+     color: grey;
+     width: 100%;
+     height: 100%;
+     justify-content: center;
+} */
+
+
+
+
+
+
+
+
+
+
+  .collapse-init :not(.panel-active) summary + * {
+    height: 0;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  
+  .collapse-init summary {
+    list-style: none;
+  }
+  .collapse-init summary::-webkit-details-marker {
+    display: none;
+  }
+  .collapse-init summary::before {
+    display: none;
+  }
+  .collapse-init summary {
+    cursor: pointer;
+  }
+  
+  /*
+    This element exists so .details-wrapper has no extra margin/padding that can screw with the smooth height collapse
+    You can style .details-wrapper decoratively but avoid anything that modifies the box and add it to .details-styling instead
+    Otherwise, this element is totally optional. Remove if you hate divitis
+  */
+  .details-styling {
+    padding: 1em;
+  }
+  
+  ::-moz-selection {
+    background: #3aa4ce;
+    color: #4d4433;
+  }
+  
+  ::selection {
+    background: #3aa4ce;
+    color: white;
+  }
+  
+  html {
+    background: #f8f5fe;
+    color: grey;
+    
+  }
+  
+  body {
+    font: 1em/1.4 'Quicksand', sans-serif;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 5vw;
+    background: white;
+    
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  h1 + p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50ch;
+  }
+  h1 ~ p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  code {
+    background: linear-gradient(white, rgb(40, 124, 192));;
+    color: #3aa4ce;
+  }
+  
+  a {
+    color: #3aa4ce;
+    box-shadow: inset 0 -3px #3aa4ce;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+
+  }
+  a:hover, a:focus {
+
+    color: #638db4;
+  }
+  
+  abbr {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-size: 1.2em;
+  }
+  
+  [type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  /* [type=checkbox] + label {
+    background: white;
+    border-left: 4px solid #3aa4ce;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    transition: 0.1s;
+    padding: 0.75em 1em;
+  } */
+  [type=checkbox] + label::before {
+    border: 2px solid; #3aa4ce;
+    border-radius: 2px;
+    color: #3aa4ce;
+    content: '';
+    display: inline-block;
+    margin-right: 0.75ch;
+    transition: 0.1s;
+    width: 1ch;
+    height: 1ch;
+    vertical-align: baseline;
+  }
+  [type=checkbox]:focus + label {
+    outline: 2px solid #3aa4ce;
+  }
+  [type=checkbox]:checked + label::before {
+    background: currentColor;
+    box-shadow: inset 0 0 0 2px #fff;
+  }
+  
+  .container {
+    box-shadow: 0.2em 1em 2em -1em #4085c5;
+    margin: 2.4em 0;
+  }
+  
+  details {
+    background: #fff;
+    border: 1px solid #3aa4ce;
+    border-bottom: 0;
+    list-style: none;
+  }
+  details:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+  details:last-child {
+    border-bottom: 1px solid #447fcc;
+    border-radius: 0 0 6px 6px;
+  }
+  
+  summary {
+    display: block;
+    transition: 0.2s;
+    font-weight: 700;
+    padding: 1em;
+  }
+  summary:focus {
+    outline: 2px solid #3f7fc9;
+  }
+  .collapse-init summary::after {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    content: '';
+    float: right;
+    width: 0.5em;
+    height: 0.5em;
+    margin-top: 0.25em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    transition: inherit;
+  }
+  [open] summary {
+    background: #338fcc;
+    color: #f5f9fe;
+  }
+  [open] summary::after {
+    margin-top: 0.5em;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  
