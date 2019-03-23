@@ -2,5 +2,6 @@
  "version": 2,
  "builds": [
     { "src": "/public/index.html", "use": "@now/static" }   
-  ]
+  ],
+ "alias": ["mentorme-landing-page.now.sh"]
 }
